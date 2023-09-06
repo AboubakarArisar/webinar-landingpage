@@ -1,0 +1,570 @@
+/*--------- Google Font import -----------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&display=swap');
+
+
+:root {
+	/*---- colors -------*/
+	--primary-color: #f9980f;
+	--secondary-color: #1a1a1a;
+	--third-color: #ffffff;
+	--review-color: #f0ececc7;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	padding: 60px 10px;
+}
+
+.white {
+	color: var(--third-color);
+}
+
+.btn {
+	display: block;
+	width: 100%;
+	background: var(--primary-color);
+	border: none;
+	border-radius: 0.2rem;
+	padding: 1rem;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.btn:hover {
+	transform: translateY(10px);
+}
+
+.btn a {
+	color: var(--third-color);
+	font-size: 0.8rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.heading {
+	color: var(--secondary-color);
+	font-size: 1.8rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+}
+
+/*---------- Top bar starts -----------*/
+.top-bar {
+	padding: 12px 20px;
+}
+
+.notification {
+	color: var(--secondary-color);
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 1.2;
+	text-align: center;
+}
+
+/*---------- Top bar ends -----------*/
+
+
+/*---------- Header section start ----------*/
+.header {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(49, 30, 3, 0.5)), url(img/hero-background.jpg);
+	background-position: top center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.subheading {
+	color: var(--primary-color);
+	font-size: 1.2rem;
+	font-weight: 600;
+	text-align: center;
+}
+
+.main-heading {
+	color: var(--third-color);
+	font-size: 2.2rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	padding: 26px 0;
+}
+
+.inner-row {
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.inner-row .col .date,
+.inner-row .col .time {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: var(--third-color);
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+.date i,
+.time i {
+	color: var(--third-color);
+	background: var(--primary-color);
+	font-size: 1.6rem;
+	padding: 8px;
+	border: none;
+	border-radius: 0.3rem;
+	margin: 1rem 0;
+}
+
+.para-line {
+	font-size: 1rem;
+	text-align: center;
+	padding: 1.5rem 0;
+}
+
+.form-area {
+	background: #f6f6f6;
+	padding: 1.2rem;
+}
+
+.form-area .form-heading {
+	font-size: 1.6rem;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.form-area hr {
+	color: #d4d4d4;
+	margin: 20px 0;
+}
+
+.input-field {
+	margin: 1rem 0;
+	padding: 0 0.5rem;
+}
+
+.input-field label {
+	font-size: 0.9rem;
+}
+
+.input-field input {
+	width: 100%;
+	background: var(--third-color);
+	border: 1px solid #d4d4d4;
+	font-size: 0.9rem;
+	font-weight: 400;
+	padding: 0.8rem;
+}
+
+/*---------- Header section end ----------*/
+
+
+/*---------- Topics section start ----------*/
+.topics {
+	background: #F6F6F6;
+}
+.topic-box {
+	width: 300px;
+	height: 400px;
+}
+.topic-box:hover {
+	cursor: pointer;
+	transform: translateY(-15px);
+	transition: 0.5s;
+	box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+	-webkit-box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+	-moz-box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+}
+
+.topics-row .col {
+	background: var(--third-color);
+	margin: 2rem 1rem;
+	padding: 2rem;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.topics-row .col i {
+	color: var(--third-color);
+	background: var(--primary-color);
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	padding: 0.6rem;
+	border: none;
+	border-radius: 5px;
+}
+
+.topics-row .col .topic-heading {
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.topics-row .col .para-line {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.topic-btn-area {
+	display: flex;
+	justify-content: center;
+}
+
+.topic-btn-area .btn {
+	width: fit-content;
+}
+
+/*---------- Topics section end ----------*/
+
+
+/*----------- host section starts ----------*/
+.host-feature {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+}
+
+.host-feature i {
+	color: var(--third-color);
+	background: var(--primary-color);
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	padding: 0.4rem;
+	border: none;
+	border-radius: 5px;
+}
+
+.host-feature .feature-name {
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+/*----------- host section ends ----------*/
+/* student review section starts */
+.review-cont {
+	width: 100%;
+	height: 300px;
+	margin-top: 200px;
+	margin-bottom: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	background-color: var(--third-color);
+}
+.student {
+	width: 150px;
+	height: 320px;	
+	background-color: var(--review-color);
+	border-radius: 6px;
+	padding: 10px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.review-cont .image img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+
+
+
+/*----------- Footer section start ------------*/
+.footer .container {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(49, 30, 3, 0.5)), url(img/footer.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.footer .container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer .container .heading {
+	color: var(--third-color);
+}
+
+.btn {
+	color: var(--third-color);
+	font-weight: 500;
+	text-transform: uppercase;
+	width: fit-content;
+}
+
+/*----------- Footer section end ------------*/
+
+
+
+/*------------------------------------------------*/
+/*------------- Desktop size ---------------------*/
+/*------------------------------------------------*/
+@media screen and (min-width: 789px) {
+	.container {
+		padding: 5rem;
+	}
+
+	.row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.row .col {
+		width: 100%;
+	}
+
+	.heading {
+		font-size: 2.4rem;
+	}
+
+	/*---------- Top bar starts -----------*/
+	.top-bar {
+		padding: 12px 20px;
+	}
+
+	.notification {
+		font-size: 1rem;
+	}
+
+	/*---------- Top bar ends -----------*/
+
+
+	/*---------- Header section start ----------*/
+	.header {
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(49, 30, 3, 0.5)), url(img/hero-background.jpg);
+		background-position: top center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.header>.container {
+		height: 100vh;
+		display: flex;
+	}
+
+	.header .container .row {
+		gap: 5rem;
+	}
+
+	.header .container .row .header-content {
+		width: 100%;
+	}
+
+	.header .container .row .header-form {
+		width: 66%;
+	}
+
+	.header-content .subheading {
+		text-align: left;
+	}
+
+	.header-content .main-heading {
+		font-size: 3.2rem;
+		font-weight: 600;
+		text-align: left;
+	}
+
+	.header-content .main-heading span {
+		color: var(--primary-color);
+	}
+
+	.inner-row {
+		justify-content: flex-start;
+		gap: 3rem;
+	}
+
+	.inner-row .col {
+		width: fit-content;
+	}
+
+	.inner-row .col .date,
+	.inner-row .col .time {
+		display: flex;
+		flex-direction: row;
+		gap: 0.5rem;
+	}
+
+	.para-line {
+		text-align: left;
+	}
+
+	.form-row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	.booking-form .form-row .col {
+		width: 100%;
+	}
+
+	.form-area {
+		padding: 2rem;
+	}
+
+	.booking-form .form-row .col .input-field {
+		margin-bottom: 0;
+	}
+
+	.booking-form .input-field {
+		margin: 1rem;
+	}
+
+	.booking-form .input-field .btn {
+		width: 100%;
+	}
+
+	/*---------- Header section end ----------*/
+
+
+	/*---------- Topics section start ----------*/
+	.topic-box {
+		width: 300px;
+		height: 400px;
+	}
+	.topic-box:hover {
+		cursor: pointer;
+		transform: translateY(-15px);
+		transition: 0.5s;
+		box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+		-webkit-box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+		-moz-box-shadow: 7px 17px 5px 0px rgba(14, 5, 5, 0.38);
+	}
+	
+
+	.topics .container .para-line {
+		text-align: center;
+		max-width: 55%;
+		margin: 0 auto;
+	}
+
+	.topics-row {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.topics-row .col {
+		padding: 3rem;
+	}
+
+	.topics-row .col .para-line {
+		max-width: 100%;
+		text-align: left;
+	}
+
+	/*---------- Topics section end ----------*/
+
+
+	/*----------- host section starts ----------*/
+	.host .container .row {
+		gap: 3rem;
+	}
+
+	.host-profile-col {
+		border-radius: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.host-img {
+		border: none;
+		border-radius: 10px;
+	}
+
+	.host-content-col .subheading,
+	.host-content-col .heading {
+		text-align: left;
+	}
+
+	.host-content-col .para-line {
+		margin: 0;
+		padding: 0;
+	}
+
+	.host-feature {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 1rem 0;
+	}
+
+	.host-feature i {
+		font-size: 1.8rem;
+		margin-bottom: 0;
+	}
+
+	.host-feature .feature-name {
+		padding-left: 0.8rem;
+	}
+
+	/*----------- host section ends ----------*/
+
+/* student review section starts */
+.review-cont {
+	width: 100%;
+	height: 300px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: var(--third-color);
+	flex-direction: row;
+}
+.student {
+	width: 300px;
+	height: 250px;	
+	background-color: var(--review-color);
+	border-radius: 6px;
+	padding: 10px;
+}
+.review-cont .image img{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+/* student review section ends */
+
+	/*----------- Footer section start ------------*/
+	.footer {
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(49, 30, 3, 0.8)), url(img/footer.jpg);
+		background-position: center center;
+	}
+
+	.footer .container {
+		padding: 8rem 0;
+	}
+
+	/*----------- Footer section end ------------*/
+}
